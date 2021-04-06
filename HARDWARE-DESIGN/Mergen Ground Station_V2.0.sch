@@ -31079,11 +31079,10 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="USB_A" device="_SMT_FEMALE_NS" package3d_urn="urn:adsk.eagle:package:38296/1"/>
 <part name="U13" library="L86" deviceset="L86" device=""/>
 <part name="U14" library="E32-868T30S" deviceset="E32-868T30S" device=""/>
-<part name="BT1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="POLAR" package3d_urn="urn:adsk.eagle:package:38040/1"/>
-<part name="D10" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="SCHOTTKY_" device="DO-219" package3d_urn="urn:adsk.eagle:package:9427153/2" technology="MBR0520LT1G" value="MBR0520LT1G"/>
+<part name="D10" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="SCHOTTKY_" device="DO-219" package3d_urn="urn:adsk.eagle:package:9427153/2" technology="MBR0520LT1G" value="B5819W"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="8.4V"/>
 <part name="F2" library="SparkFun-Fuses" library_urn="urn:adsk.eagle:library:517" deviceset="PPTC" device="_HALF-AMP" package3d_urn="urn:adsk.eagle:package:38575/1" value="1A"/>
-<part name="D11" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="SCHOTTKY_" device="DO-219" package3d_urn="urn:adsk.eagle:package:9427153/2" technology="MBR0520LT1G" value="MBR0520LT1G"/>
+<part name="D11" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="SCHOTTKY_" device="DO-219" package3d_urn="urn:adsk.eagle:package:9427153/2" technology="MBR0520LT1G" value="B5819W"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="8.4V"/>
 <part name="F4" library="SparkFun-Fuses" library_urn="urn:adsk.eagle:library:517" deviceset="PPTC" device="_HALF-AMP" package3d_urn="urn:adsk.eagle:package:38575/1" value="0.75A"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -31105,7 +31104,6 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="SW1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="POLAR" package3d_urn="urn:adsk.eagle:package:38040/1"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U15" library="AMS1117-3.3" library_urn="urn:adsk.eagle:library:27162810" deviceset="AMS1117-3.3" device="" package3d_urn="urn:adsk.eagle:package:27162813/2" value="AMS1117-5V"/>
@@ -31197,6 +31195,8 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 <part name="X2" library="Rembrandt Electronics - JST XH Connectors v1-0" deviceset="JST-XH-04-PIN" device="-LONG-PAD"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="POWER" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM-NO_SILK" package3d_urn="urn:adsk.eagle:package:38055/1"/>
+<part name="SW2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM-NO_SILK" package3d_urn="urn:adsk.eagle:package:38055/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -31285,10 +31285,6 @@ PCB: 0.8mm
 <attribute name="VALUE" x="22.8388" y="-91.4697" size="2.544240625" layer="96"/>
 </instance>
 <instance part="U14" gate="G$1" x="48.26" y="22.86" smashed="yes"/>
-<instance part="BT1" gate="G$1" x="-76.2" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-78.74" y="58.674" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-78.74" y="69.088" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="D10" gate="G$1" x="-66.04" y="33.02" smashed="yes">
 <attribute name="NAME" x="-66.04" y="36.195" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="-71.12" y="29.591" size="1.778" layer="95" align="center"/>
@@ -31370,10 +31366,6 @@ PCB: 0.8mm
 </instance>
 <instance part="SUPPLY22" gate="G$1" x="22.86" y="33.02" smashed="yes">
 <attribute name="VALUE" x="22.86" y="35.814" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SW1" gate="G$1" x="-76.2" y="53.34" smashed="yes">
-<attribute name="VALUE" x="-78.74" y="48.514" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-78.74" y="58.928" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND51" gate="1" x="187.96" y="-88.9" smashed="yes">
 <attribute name="VALUE" x="182.88" y="-91.44" size="1.778" layer="96"/>
@@ -31715,6 +31707,14 @@ PCB: 0.8mm
 <instance part="GND9" gate="1" x="-66.04" y="93.98" smashed="yes">
 <attribute name="VALUE" x="-68.58" y="91.44" size="1.778" layer="96"/>
 </instance>
+<instance part="POWER" gate="G$1" x="-76.2" y="63.5" smashed="yes">
+<attribute name="VALUE" x="-78.74" y="58.674" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-78.74" y="69.088" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SW2" gate="G$1" x="-76.2" y="53.34" smashed="yes">
+<attribute name="VALUE" x="-78.74" y="48.514" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-78.74" y="58.928" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -31733,9 +31733,9 @@ PCB: 0.8mm
 <wire x1="-71.12" y1="5.08" x2="-68.58" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="53.34" x2="-63.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="SW2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -31788,10 +31788,10 @@ PCB: 0.8mm
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="BT1" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="66.04" x2="-66.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="66.04" x2="-66.04" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="POWER" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="STM1" gate="G$1" pin="1"/>
@@ -32497,11 +32497,11 @@ PCB: 0.8mm
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="BT1" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="63.5" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="55.88" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="55.88" x2="-66.04" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="POWER" gate="G$1" pin="1"/>
+<pinref part="SW2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$31" class="0">
