@@ -3337,14 +3337,6 @@ design rules under a new name.</description>
 <via x="63.246" y="76.962" extent="1-16" drill="0.4"/>
 <via x="62.23" y="78.105" extent="1-16" drill="0.4"/>
 <via x="63.119" y="78.867" extent="1-16" drill="0.4"/>
-<via x="21.336" y="51.562" extent="1-16" drill="0.55"/>
-<via x="21.336" y="53.721" extent="1-16" drill="0.55"/>
-<via x="21.336" y="55.753" extent="1-16" drill="0.55"/>
-<via x="22.606" y="49.784" extent="1-16" drill="0.55"/>
-<via x="24.13" y="49.784" extent="1-16" drill="0.55"/>
-<via x="25.781" y="49.784" extent="1-16" drill="0.55"/>
-<via x="21.336" y="57.785" extent="1-16" drill="0.55"/>
-<via x="23.114" y="58.293" extent="1-16" drill="0.55"/>
 <via x="3.81" y="83.82" extent="1-16" drill="0.55"/>
 <via x="63.5" y="71.12" extent="1-16" drill="0.55"/>
 <via x="45.72" y="68.58" extent="1-16" drill="0.55"/>
@@ -3356,6 +3348,9 @@ design rules under a new name.</description>
 <via x="34.29" y="55.88" extent="1-16" drill="0.55"/>
 <via x="43.815" y="50.165" extent="1-16" drill="0.55"/>
 <contactref element="POWER" pad="2"/>
+<via x="21.463" y="60.071" extent="1-16" drill="0.55"/>
+<via x="22.352" y="58.674" extent="1-16" drill="0.55"/>
+<via x="25.654" y="68.199" extent="1-16" drill="0.55"/>
 </signal>
 <signal name="FN">
 <contactref element="R11" pad="1"/>
