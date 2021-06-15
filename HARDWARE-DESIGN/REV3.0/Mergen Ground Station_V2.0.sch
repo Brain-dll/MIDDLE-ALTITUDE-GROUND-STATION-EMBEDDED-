@@ -31281,33 +31281,33 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SMT-BUZZER">
+<library name="CMT-7525S-SMT">
 <packages>
-<package name="CUI_CMT-8530S-SMT">
-<text x="6.25485" y="-4.1332" size="1.270990625" layer="21" rot="R90">+</text>
-<text x="-5.07218125" y="5.17221875" size="1.27055" layer="25">&gt;NAME</text>
-<text x="-4.57293125" y="-6.604240625" size="1.270809375" layer="27">&gt;VALUE</text>
-<wire x1="-4.25" y1="-4.25" x2="-4.25" y2="4.25" width="0.127" layer="51"/>
-<wire x1="2" y1="-4.25" x2="-2" y2="-4.25" width="0.127" layer="21"/>
-<wire x1="-4.25" y1="2" x2="-4.25" y2="-2" width="0.127" layer="21"/>
-<wire x1="4.25" y1="-4.25" x2="-4.25" y2="-4.25" width="0.127" layer="51"/>
-<text x="5.16041875" y="3.220259375" size="1.2701" layer="21">-</text>
-<wire x1="-5" y1="5" x2="-5" y2="-5" width="0.05" layer="39"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.05" layer="39"/>
-<wire x1="-4.25" y1="4.25" x2="4.25" y2="4.25" width="0.127" layer="51"/>
-<wire x1="4.25" y1="4.25" x2="4.25" y2="-4.25" width="0.127" layer="51"/>
-<wire x1="-2" y1="4.25" x2="2" y2="4.25" width="0.127" layer="21"/>
-<wire x1="4.25" y1="2" x2="4.25" y2="-2" width="0.127" layer="21"/>
-<wire x1="5" y1="5" x2="-5" y2="5" width="0.05" layer="39"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.05" layer="39"/>
-<smd name="P" x="3.5" y="-3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="N" x="3.5" y="3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="1" x="-3.5" y="3.5" dx="2.5" dy="2.5" layer="1"/>
-<smd name="2" x="-3.5" y="-3.5" dx="2.5" dy="2.5" layer="1"/>
+<package name="CUI_CMT-7525S-SMT">
+<text x="6.25653125" y="-4.13431875" size="1.27133125" layer="21" rot="R90">+</text>
+<text x="-3.804509375" y="5.176140625" size="1.271509375" layer="25">&gt;NAME</text>
+<text x="-3.81176875" y="-6.606540625" size="1.271259375" layer="27">&gt;VALUE</text>
+<wire x1="-3.75" y1="-3.75" x2="-3.75" y2="3.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-3.75" x2="-1.5" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="1.5" x2="-3.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-3.75" x2="-3.75" y2="-3.75" width="0.127" layer="51"/>
+<text x="5.16728125" y="3.22455" size="1.271790625" layer="21">-</text>
+<wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.05" layer="39"/>
+<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.05" layer="39"/>
+<wire x1="-3.75" y1="3.75" x2="3.75" y2="3.75" width="0.127" layer="51"/>
+<wire x1="3.75" y1="3.75" x2="3.75" y2="-3.75" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="3.75" x2="1.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="3.75" y1="1.5" x2="3.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.05" layer="39"/>
+<wire x1="4.5" y1="4.5" x2="4.5" y2="-4.5" width="0.05" layer="39"/>
+<smd name="P" x="3" y="-3" dx="2.5" dy="2.5" layer="1"/>
+<smd name="1" x="-3" y="-3" dx="2.5" dy="2.5" layer="1"/>
+<smd name="N" x="3" y="3" dx="2.5" dy="2.5" layer="1"/>
+<smd name="2" x="-3" y="3" dx="2.5" dy="2.5" layer="1"/>
 </package>
 </packages>
 <symbols>
-<symbol name="CMT-8530S-SMT">
+<symbol name="CMT-7525S-SMT">
 <wire x1="-0.635" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0.635" y1="1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
@@ -31319,21 +31319,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.905" y1="-3.175" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<text x="-1.90696875" y="1.271309375" size="1.779840625" layer="94">+</text>
-<text x="-3.813390625" y="8.897909375" size="1.77958125" layer="95">&gt;NAME</text>
-<text x="-3.814940625" y="-11.4448" size="1.780309375" layer="96">&gt;VALUE</text>
+<text x="-1.906109375" y="1.270740625" size="1.779040625" layer="94">+</text>
+<text x="-3.810790625" y="8.891840625" size="1.77836875" layer="95">&gt;NAME</text>
+<text x="-3.81581875" y="-11.4474" size="1.780709375" layer="96">&gt;VALUE</text>
 <pin name="P" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="N" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CMT-8530S-SMT" prefix="LS">
-<description>8.5 mm, 3.6 Vo-p, 90 dB, Surface Mount (SMT), Magnetic Audio Transducer Buzzer &lt;a href="https://pricing.snapeda.com/parts/CMT-8530S-SMT-TR/CUI%20Devices/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<deviceset name="CMT-7525S-SMT" prefix="LS">
+<description>7.5 mm, 3.6 Vo-p, 90 dB, Surface Mount (SMT), Magnetic Audio Transducer Buzzer &lt;a href="https://pricing.snapeda.com/parts/CMT-7525S-SMT-TR/CUI%20Devices/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CMT-8530S-SMT" x="0" y="0"/>
+<gate name="G$1" symbol="CMT-7525S-SMT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CUI_CMT-8530S-SMT">
+<device name="" package="CUI_CMT-7525S-SMT">
 <connects>
 <connect gate="G$1" pin="N" pad="N"/>
 <connect gate="G$1" pin="P" pad="P"/>
@@ -31341,11 +31341,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cmt-8530s-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM"/>
-<attribute name="DESCRIPTION" value="8.5 mm, 3.6 Vo-p, 90 dB, Surface Mount (SMT), Magnetic Audio Transducer Buzzer"/>
+<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cmt-7525s-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM"/>
+<attribute name="DESCRIPTION" value="7.5 mm, 3.6 Vo-p, 90 dB, Surface Mount (SMT), Magnetic Audio Transducer Buzzer"/>
 <attribute name="MF" value="CUI Devices"/>
-<attribute name="MP" value="CMT-8530S-SMT-TR"/>
-<attribute name="PACKAGE" value=" CUI"/>
+<attribute name="MP" value="CMT-7525S-SMT-TR"/>
+<attribute name="PACKAGE" value=" CUI Inc."/>
 <attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
@@ -31500,7 +31500,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:27167846" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:27167834/2" value="GREEN"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1.5k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LS1" library="SMT-BUZZER" deviceset="CMT-8530S-SMT" device=""/>
+<part name="LS2" library="CMT-7525S-SMT" deviceset="CMT-7525S-SMT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -32023,9 +32023,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND12" gate="1" x="251.46" y="31.75" smashed="yes" rot="R90">
 <attribute name="VALUE" x="254" y="26.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LS1" gate="G$1" x="246.38" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="237.482090625" y="46.986609375" size="1.77958125" layer="95" rot="R90"/>
-<attribute name="VALUE" x="257.8248" y="46.985059375" size="1.780309375" layer="96" rot="R90"/>
+<instance part="LS2" gate="G$1" x="246.38" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="237.488159375" y="46.989209375" size="1.77836875" layer="95" rot="R90"/>
+<attribute name="VALUE" x="257.8274" y="46.98418125" size="1.780709375" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -32124,9 +32124,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="246.38" y1="31.75" x2="248.92" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LS1" gate="G$1" pin="N"/>
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="251.46" y1="50.8" x2="255.27" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="LS2" gate="G$1" pin="N"/>
 </segment>
 </net>
 <net name="FN" class="0">
@@ -32480,8 +32480,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$4" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
-<pinref part="LS1" gate="G$1" pin="P"/>
 <wire x1="236.22" y1="50.8" x2="241.3" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="LS2" gate="G$1" pin="P"/>
 </segment>
 </net>
 </nets>
