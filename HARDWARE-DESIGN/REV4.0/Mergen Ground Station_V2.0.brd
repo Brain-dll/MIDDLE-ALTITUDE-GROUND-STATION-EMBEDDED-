@@ -2613,32 +2613,6 @@ Number of pins: &lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;P&gt;
 </package>
 </packages>
 </library>
-<library name="CMT-7525S-SMT">
-<packages>
-<package name="CUI_CMT-7525S-SMT">
-<text x="6.25653125" y="-4.13431875" size="1.27133125" layer="21" rot="R90">+</text>
-<text x="-3.804509375" y="5.176140625" size="1.271509375" layer="25">&gt;NAME</text>
-<text x="-3.81176875" y="-6.606540625" size="1.271259375" layer="27">&gt;VALUE</text>
-<wire x1="-3.75" y1="-3.75" x2="-3.75" y2="3.75" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-3.75" x2="-1.5" y2="-3.75" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="1.5" x2="-3.75" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-3.75" x2="-3.75" y2="-3.75" width="0.127" layer="51"/>
-<text x="5.16728125" y="3.22455" size="1.271790625" layer="21">-</text>
-<wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.05" layer="39"/>
-<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.05" layer="39"/>
-<wire x1="-3.75" y1="3.75" x2="3.75" y2="3.75" width="0.127" layer="51"/>
-<wire x1="3.75" y1="3.75" x2="3.75" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="3.75" x2="1.5" y2="3.75" width="0.127" layer="21"/>
-<wire x1="3.75" y1="1.5" x2="3.75" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.05" layer="39"/>
-<wire x1="4.5" y1="4.5" x2="4.5" y2="-4.5" width="0.05" layer="39"/>
-<smd name="P" x="3" y="-3" dx="2.5" dy="2.5" layer="1"/>
-<smd name="1" x="-3" y="-3" dx="2.5" dy="2.5" layer="1"/>
-<smd name="N" x="3" y="3" dx="2.5" dy="2.5" layer="1"/>
-<smd name="2" x="-3" y="3" dx="2.5" dy="2.5" layer="1"/>
-</package>
-</packages>
-</library>
 <library name="ELTASSAN">
 <packages>
 <package name="MDBT42T-AT">
@@ -3842,6 +3816,126 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </package3d>
 </packages3d>
 </library>
+<library name="SparkFun-Electromechanical" urn="urn:adsk.eagle:library:516">
+<description>&lt;h3&gt;SparkFun Electromechanical Parts&lt;/h3&gt;
+This library contains electromechanical devices, like motors, speakers,servos, and relays.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="BUZZER-12MM" urn="urn:adsk.eagle:footprint:38535/1" library_version="1">
+<description>&lt;h3&gt;12mm Buzzer - PTH&lt;/h3&gt;
+&lt;p&gt;This is a small 12mm round speaker that operates around the audible 2kHz range. You can use these speakers to create simple music or user interfaces.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/General/cem-1203-42-.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;BUZZER&lt;/li&gt;&lt;/ul&gt;</description>
+<circle x="0" y="0" radius="5.9" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="51"/>
+<pad name="-" x="-3.25" y="0" drill="0.9" diameter="1.778"/>
+<pad name="+" x="3.25" y="0" drill="0.9" diameter="1.778"/>
+<text x="0" y="6.096" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="5.588" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="BUZZER-12MM" urn="urn:adsk.eagle:package:38558/1" type="box" library_version="1">
+<description>12mm Buzzer - PTH
+This is a small 12mm round speaker that operates around the audible 2kHz range. You can use these speakers to create simple music or user interfaces.
+Datasheet
+Devices Using
+BUZZER</description>
+<packageinstances>
+<packageinstance name="BUZZER-12MM"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:27162923">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X04" urn="urn:adsk.eagle:footprint:37702/1" library_version="2">
+<description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X04" urn="urn:adsk.eagle:package:27162919/2" type="model" library_version="2">
+<description>Plated Through Hole - 4 Pin
+Specifications:
+Pin count:4
+Pin pitch:0.1"
+
+Example device(s):
+CONN_04
+</description>
+<packageinstances>
+<packageinstance name="1X04"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4480,17 +4574,6 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ABMM2-8.000MHZ-E2-T/?ref=eda" x="115.316" y="-27.432" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="51.526" y="34.388" size="1.27" layer="28" rot="MR270" align="top-left"/>
 </element>
-<element name="LS2" library="CMT-7525S-SMT" package="CUI_CMT-7525S-SMT" value="CMT-7525S-SMT" x="30.988" y="51.816" smashed="yes" rot="R270">
-<attribute name="AVAILABILITY" value="In Stock" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/audio/buzzers/audio-transducers/cmt-7525s-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESCRIPTION" value="7.5 mm, 3.6 Vo-p, 90 dB, Surface Mount (SMT), Magnetic Audio Transducer Buzzer" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="CUI Devices" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MP" value="CMT-7525S-SMT-TR" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="36.164140625" y="55.620509375" size="1.271509375" layer="25" rot="R270"/>
-<attribute name="PACKAGE" value=" CUI Inc." x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PRICE" value="None" x="45.466" y="63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="24.381459375" y="55.62776875" size="1.271259375" layer="27" rot="R270"/>
-</element>
 <element name="U1" library="ELTASSAN" package="MDBT42T-AT" value="" x="67.6148" y="4.7498" smashed="yes" rot="MR180">
 <attribute name="COMPONENT" value="MODULE BLUETOOTH BT4.2/5 nRF52805 SOC CHIP ANTENNA" x="59.2328" y="-8.9662" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="63.9148" y="-1.4502" size="0.5" layer="26" rot="MR180"/>
@@ -4557,6 +4640,17 @@ design rules under a new name.</description>
 <attribute name="TYPE" value="" x="8.8392" y="51.7906" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="10.4688" y="51.7906" size="1.27" layer="28" rot="MR270" align="top-center"/>
 <attribute name="ZENER_VOLTAGE" value="" x="8.8392" y="51.7906" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="LS1" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" package="BUZZER-12MM" package3d_urn="urn:adsk.eagle:package:38558/1" value="BUZZER-PTH" x="44.0182" y="39.8272" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.9222" y="39.8272" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="COMP-08253" x="30.988" y="27.813" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SF_SKU" value="COM-07950" x="30.988" y="27.813" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="38.4302" y="39.8272" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+</element>
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:27162923" package="1X04" package3d_urn="urn:adsk.eagle:package:27162919/2" value="" x="81.407" y="20.2692" smashed="yes" rot="R90">
+<attribute name="NAME" x="80.01" y="18.9992" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="PROD_ID" value="CONN-09696" x="81.407" y="20.2692" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="83.439" y="18.9992" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -4690,7 +4784,6 @@ design rules under a new name.</description>
 <via x="69.9262" y="56.769" extent="1-16" drill="0.381"/>
 <via x="69.5452" y="57.4802" extent="1-16" drill="0.381"/>
 <via x="73.8632" y="57.5564" extent="1-16" drill="0.381"/>
-<contactref element="LS2" pad="N"/>
 <contactref element="R42" pad="2"/>
 <contactref element="R43" pad="2"/>
 <contactref element="U1" pad="WAKE-UP"/>
@@ -4730,6 +4823,8 @@ design rules under a new name.</description>
 <via x="30.226" y="35.0012" extent="1-16" drill="0.381"/>
 <via x="37.1348" y="21.1582" extent="1-16" drill="0.381"/>
 <via x="18.7198" y="27.7876" extent="1-16" drill="0.381"/>
+<contactref element="LS1" pad="-"/>
+<contactref element="J1" pad="1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="STM1" pad="3"/>
@@ -4793,6 +4888,9 @@ design rules under a new name.</description>
 <wire x1="4.7242" y1="50.1902" x2="8.8392" y2="50.1902" width="0.6096" layer="16"/>
 <wire x1="13.7922" y1="3.302" x2="1.8796" y2="15.2146" width="0.6096" layer="1"/>
 <wire x1="1.8796" y1="15.2146" x2="1.8796" y2="47.3456" width="0.6096" layer="1"/>
+<contactref element="J1" pad="4"/>
+<wire x1="69.088" y1="23.708" x2="73.2692" y2="27.8892" width="0.6096" layer="16"/>
+<wire x1="73.2692" y1="27.8892" x2="81.407" y2="27.8892" width="0.6096" layer="16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="F4" pad="2"/>
@@ -5170,6 +5268,9 @@ design rules under a new name.</description>
 <wire x1="41.24861875" y1="26.67" x2="71.374" y2="26.67" width="0.3048" layer="1"/>
 <wire x1="71.374" y1="26.67" x2="72.644" y2="25.4" width="0.3048" layer="1"/>
 <wire x1="72.644" y1="25.4" x2="77.47" y2="25.4" width="0.3048" layer="1"/>
+<contactref element="J1" pad="3"/>
+<wire x1="77.47" y1="25.4" x2="81.3562" y2="25.4" width="0.3048" layer="1"/>
+<wire x1="81.3562" y1="25.4" x2="81.407" y2="25.3492" width="0.3048" layer="1"/>
 </signal>
 <signal name="RX2">
 <contactref element="U2" pad="13"/>
@@ -5181,6 +5282,9 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="24.13" x2="71.374" y2="24.13" width="0.3048" layer="1"/>
 <wire x1="77.47" y1="22.86" x2="72.644" y2="22.86" width="0.3048" layer="1"/>
 <wire x1="72.644" y1="22.86" x2="71.374" y2="24.13" width="0.3048" layer="1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="77.47" y1="22.86" x2="81.3562" y2="22.86" width="0.3048" layer="1"/>
+<wire x1="81.3562" y1="22.86" x2="81.407" y2="22.8092" width="0.3048" layer="1"/>
 </signal>
 <signal name="MISO">
 <contactref element="U2" pad="27"/>
@@ -5254,9 +5358,9 @@ design rules under a new name.</description>
 <contactref element="U2" pad="42"/>
 <contactref element="J3" pad="3"/>
 <wire x1="35.056" y1="34.73" x2="35.056" y2="39.65616875" width="0.3048" layer="16"/>
-<wire x1="35.056" y1="39.65616875" x2="36.05253125" y2="40.6527" width="0.3048" layer="16"/>
-<via x="36.05253125" y="40.6527" extent="1-16" drill="0.381"/>
-<wire x1="36.05253125" y1="40.6527" x2="51.054" y2="55.65416875" width="0.3048" layer="1"/>
+<wire x1="35.056" y1="39.65616875" x2="35.51913125" y2="40.1193" width="0.3048" layer="16"/>
+<via x="35.51913125" y="40.1193" extent="1-16" drill="0.381"/>
+<wire x1="35.51913125" y1="40.1193" x2="51.054" y2="55.65416875" width="0.3048" layer="1"/>
 <wire x1="51.054" y1="55.65416875" x2="51.054" y2="61.214" width="0.3048" layer="1"/>
 <wire x1="51.562" y1="61.722" x2="51.054" y2="61.214" width="0.3048" layer="1"/>
 <wire x1="53.848" y1="61.722" x2="51.562" y2="61.722" width="0.3048" layer="1"/>
@@ -5267,10 +5371,12 @@ design rules under a new name.</description>
 <contactref element="U2" pad="43"/>
 <contactref element="J3" pad="2"/>
 <wire x1="35.556" y1="34.73" x2="35.556" y2="39.112" width="0.3048" layer="16"/>
-<via x="37.084" y="40.64" extent="1-16" drill="0.381"/>
-<wire x1="37.084" y1="40.64" x2="52.324" y2="55.88" width="0.3048" layer="1"/>
-<wire x1="52.324" y1="55.88" x2="52.324" y2="59.436" width="0.3048" layer="1"/>
-<wire x1="35.556" y1="39.112" x2="37.084" y2="40.64" width="0.3048" layer="16"/>
+<via x="36.5252" y="39.9034" extent="1-16" drill="0.381"/>
+<wire x1="52.324" y1="56.0324" x2="36.6522" y2="40.3606" width="0.3048" layer="1"/>
+<wire x1="36.6522" y1="40.3606" x2="36.5252" y2="40.207140625" width="0.3048" layer="1"/>
+<wire x1="36.5252" y1="39.9034" x2="36.5252" y2="40.207140625" width="0.3048" layer="1"/>
+<wire x1="52.324" y1="56.0324" x2="52.324" y2="59.436" width="0.3048" layer="1"/>
+<wire x1="35.556" y1="39.112" x2="36.5252" y2="39.9034" width="0.3048" layer="16"/>
 </signal>
 <signal name="LED">
 <contactref element="U2" pad="18"/>
@@ -5418,16 +5524,6 @@ design rules under a new name.</description>
 <contactref element="D17" pad="A"/>
 <contactref element="R20" pad="1"/>
 <wire x1="38.608" y1="19.978" x2="38.608" y2="18.657" width="0.3048" layer="1"/>
-</signal>
-<signal name="N$4">
-<contactref element="R32" pad="2"/>
-<wire x1="27.996" y1="44.394" x2="31.75" y2="40.64" width="0.3048" layer="1"/>
-<via x="31.75" y="40.64" extent="1-16" drill="0.381"/>
-<wire x1="33.528" y1="38.696" x2="33.528" y2="38.862" width="0.3048" layer="16"/>
-<wire x1="31.75" y1="40.64" x2="33.528" y2="38.862" width="0.3048" layer="16"/>
-<contactref element="LS2" pad="P"/>
-<wire x1="27.988" y1="48.816" x2="27.996" y2="48.808" width="0.3048" layer="1"/>
-<wire x1="27.996" y1="48.808" x2="27.996" y2="44.394" width="0.3048" layer="1"/>
 </signal>
 <signal name="D2">
 <polygon width="0.1524" layer="1">
@@ -5630,6 +5726,18 @@ design rules under a new name.</description>
 <wire x1="34.5948" y1="14.224" x2="35.3568" y2="14.986" width="0.3048" layer="1"/>
 <wire x1="35.3568" y1="14.986" x2="35.3568" y2="15.6854" width="0.3048" layer="1"/>
 <wire x1="31.5214" y1="13.6398" x2="32.1056" y2="14.224" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="R32" pad="2"/>
+<contactref element="LS1" pad="+"/>
+<wire x1="33.528" y1="38.696" x2="33.1724" y2="39.0516" width="0.3048" layer="16"/>
+<wire x1="33.1724" y1="39.0516" x2="33.1724" y2="40.1574" width="0.3048" layer="16"/>
+<wire x1="33.1724" y1="40.1574" x2="33.909" y2="40.894" width="0.3048" layer="16"/>
+<wire x1="39.5986" y1="40.894" x2="40.0304" y2="40.4622" width="0.3048" layer="16"/>
+<via x="40.0304" y="40.4622" extent="1-16" drill="0.381"/>
+<wire x1="40.0304" y1="40.4622" x2="42.6454" y2="43.0772" width="0.3048" layer="1"/>
+<wire x1="42.6454" y1="43.0772" x2="44.0182" y2="43.0772" width="0.3048" layer="1"/>
+<wire x1="33.909" y1="40.894" x2="39.5986" y2="40.894" width="0.3048" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
