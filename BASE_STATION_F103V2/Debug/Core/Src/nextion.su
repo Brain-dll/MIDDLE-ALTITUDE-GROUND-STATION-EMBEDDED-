@@ -1,0 +1,7 @@
+nextion.c:13:6:NXT_SEND_VAL	48	static
+nextion.c:21:6:NXT_SEND_SVAL	48	static
+nextion.c:29:6:NXT_SEND_VALFLOAT	64	static
+nextion.c:37:6:NXT_SEND_STR	56	static
+nextion.c:44:6:NXT_SEND_TXT	48	static
+nextion.c:52:6:NXT_SEND_TXTBX	120	static
+nextion.c:60:6:NXT_Disable_Error	24	static

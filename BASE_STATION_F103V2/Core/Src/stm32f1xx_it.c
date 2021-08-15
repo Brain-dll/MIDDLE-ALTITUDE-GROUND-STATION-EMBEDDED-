@@ -1,0 +1,351 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file    stm32f1xx_it.c
+  * @brief   Interrupt Service Routines.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "stm32f1xx_it.h"
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#include "string.h"
+#include <stdlib.h>
+#include "stdio.h"
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN TD */
+
+/* USER CODE END TD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+/* USER CODE BEGIN PV */
+#define PI 3.14159265358979323846
+
+char buff1 = '\0', buff2 = '\0';
+extern char RX2_BUF[80];
+extern uint8_t RX2;
+
+extern uint8_t stop;
+extern uint8_t newrecord;
+extern uint8_t pause;
+
+extern char RX1_BUF[100];
+
+extern char NEXT_BUFF[100];  //***
+extern char COOR[25];
+
+uint8_t c1 = 0, gps_size = 0;
+uint8_t gps = 0, n = 0;
+
+
+extern uint8_t mgn;
+
+char RX3_buff[4] = {0};
+char buff = '\0';
+uint8_t count1 = 0;
+uint8_t run = 0;
+extern uint8_t cal_dis;
+
+extern uint8_t recal;
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+/* USER CODE BEGIN PFP */
+
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/* External variables --------------------------------------------------------*/
+extern TIM_HandleTypeDef htim3;
+extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart2;
+extern UART_HandleTypeDef huart3;
+/* USER CODE BEGIN EV */
+
+/* USER CODE END EV */
+
+/******************************************************************************/
+/*           Cortex-M3 Processor Interruption and Exception Handlers          */
+/******************************************************************************/
+/**
+  * @brief This function handles Non maskable interrupt.
+  */
+void NMI_Handler(void)
+{
+  /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+
+  /* USER CODE END NonMaskableInt_IRQn 0 */
+  /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
+
+  /* USER CODE END NonMaskableInt_IRQn 1 */
+}
+
+/**
+  * @brief This function handles Hard fault interrupt.
+  */
+void HardFault_Handler(void)
+{
+  /* USER CODE BEGIN HardFault_IRQn 0 */
+
+  /* USER CODE END HardFault_IRQn 0 */
+  while (1)
+  {
+    /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+    /* USER CODE END W1_HardFault_IRQn 0 */
+  }
+}
+
+/**
+  * @brief This function handles Memory management fault.
+  */
+void MemManage_Handler(void)
+{
+  /* USER CODE BEGIN MemoryManagement_IRQn 0 */
+
+  /* USER CODE END MemoryManagement_IRQn 0 */
+  while (1)
+  {
+    /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
+    /* USER CODE END W1_MemoryManagement_IRQn 0 */
+  }
+}
+
+/**
+  * @brief This function handles Prefetch fault, memory access fault.
+  */
+void BusFault_Handler(void)
+{
+  /* USER CODE BEGIN BusFault_IRQn 0 */
+
+  /* USER CODE END BusFault_IRQn 0 */
+  while (1)
+  {
+    /* USER CODE BEGIN W1_BusFault_IRQn 0 */
+    /* USER CODE END W1_BusFault_IRQn 0 */
+  }
+}
+
+/**
+  * @brief This function handles Undefined instruction or illegal state.
+  */
+void UsageFault_Handler(void)
+{
+  /* USER CODE BEGIN UsageFault_IRQn 0 */
+
+  /* USER CODE END UsageFault_IRQn 0 */
+  while (1)
+  {
+    /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
+    /* USER CODE END W1_UsageFault_IRQn 0 */
+  }
+}
+
+/**
+  * @brief This function handles System service call via SWI instruction.
+  */
+void SVC_Handler(void)
+{
+  /* USER CODE BEGIN SVCall_IRQn 0 */
+
+  /* USER CODE END SVCall_IRQn 0 */
+  /* USER CODE BEGIN SVCall_IRQn 1 */
+
+  /* USER CODE END SVCall_IRQn 1 */
+}
+
+/**
+  * @brief This function handles Debug monitor.
+  */
+void DebugMon_Handler(void)
+{
+  /* USER CODE BEGIN DebugMonitor_IRQn 0 */
+
+  /* USER CODE END DebugMonitor_IRQn 0 */
+  /* USER CODE BEGIN DebugMonitor_IRQn 1 */
+
+  /* USER CODE END DebugMonitor_IRQn 1 */
+}
+
+/**
+  * @brief This function handles Pendable request for system service.
+  */
+void PendSV_Handler(void)
+{
+  /* USER CODE BEGIN PendSV_IRQn 0 */
+
+  /* USER CODE END PendSV_IRQn 0 */
+  /* USER CODE BEGIN PendSV_IRQn 1 */
+
+  /* USER CODE END PendSV_IRQn 1 */
+}
+
+/**
+  * @brief This function handles System tick timer.
+  */
+void SysTick_Handler(void)
+{
+  /* USER CODE BEGIN SysTick_IRQn 0 */
+
+  /* USER CODE END SysTick_IRQn 0 */
+  HAL_IncTick();
+  /* USER CODE BEGIN SysTick_IRQn 1 */
+
+  /* USER CODE END SysTick_IRQn 1 */
+}
+
+/******************************************************************************/
+/* STM32F1xx Peripheral Interrupt Handlers                                    */
+/* Add here the Interrupt Handlers for the used peripherals.                  */
+/* For the available peripheral interrupt handler names,                      */
+/* please refer to the startup file (startup_stm32f1xx.s).                    */
+/******************************************************************************/
+
+/**
+  * @brief This function handles TIM3 global interrupt.
+  */
+void TIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM3_IRQn 0 */
+
+  /* USER CODE END TIM3_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim3);
+  /* USER CODE BEGIN TIM3_IRQn 1 */
+  mgn = 1;
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+  /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+
+  /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
+  /* USER CODE BEGIN USART1_IRQn 1 */
+  HAL_UART_Receive_IT(&huart1, (uint8_t*) &buff1, 1);
+  	RX1_BUF[c1] = buff1;
+  	if (RX1_BUF[c1] == '\n') {
+  		gps = 1;
+  		gps_size = c1;
+  		c1 = 0;
+  	}
+  	c1++;
+  /* USER CODE END USART1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART2 global interrupt.
+  */
+void USART2_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART2_IRQn 0 */
+
+  /* USER CODE END USART2_IRQn 0 */
+  HAL_UART_IRQHandler(&huart2);
+  /* USER CODE BEGIN USART2_IRQn 1 */
+  HAL_UART_Receive_IT(&huart2, (uint8_t*) &buff2, 1);
+  	if (buff2 != '\n' && buff2 != '\0' ) {
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, SET);
+  		RX2_BUF[n] = buff2;
+  		n++;
+  	} else if(buff2 == '\n') {
+  		uint8_t A = 0;
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, RESET);
+  		for (; n < sizeof(RX2_BUF); n++) {  //  REMEMBER : n value was deleted
+  			RX2_BUF[n] = COOR[A];
+  			if (COOR[A] == '\0') {
+  				break;
+  			}
+  			A++;
+  		}
+  		n = 0;
+  		//HAL_UART_Transmit(&huart3, (uint8_t*) RX2_BUF, sizeof(RX2_BUF), 1000);  // For hard fault interrupt, you have to assign priority UART ports
+  		RX2 = 1;
+    	}
+  /* USER CODE END USART2_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART3 global interrupt.
+  */
+void USART3_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART3_IRQn 0 */
+
+  /* USER CODE END USART3_IRQn 0 */
+  HAL_UART_IRQHandler(&huart3);
+  /* USER CODE BEGIN USART3_IRQn 1 */
+  HAL_UART_Receive_IT(&huart3, (uint8_t*) &buff, 1);
+
+    	if (buff == '$')
+    		run = 1;
+    	else if(buff == 0x00){
+    		//HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+    	}
+    	else if(buff == 0x1A){
+    	  		//HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    	  	}
+    	if (run == 1) {
+    		RX3_buff[count1] = buff;
+    		count1++;
+    		if (buff == '&') {
+    			count1 = 0;
+    			if (RX3_buff[1] == '0' && RX3_buff[2] == 0x02)
+    				recal = 1;
+    			else if (RX3_buff[1] == '0' && RX3_buff[2] == 0x05)
+    				newrecord = 1;
+    			else if (RX3_buff[1] == '0' && RX3_buff[2] == 0x03){
+    				if(pause == 0)
+    					pause = 1;
+    				else
+    					pause = 0;
+    			}
+    			else if (RX3_buff[1] == '0' && RX3_buff[2] == 0x04)
+    				stop = 1;
+    			for (uint8_t i = 0; i < sizeof(RX3_buff); i++)
+    				RX3_buff[i] = '\0';
+    		}
+    		if (buff == '&')
+    			run = 0;
+    	}
+  /* USER CODE END USART3_IRQn 1 */
+}
+
+/* USER CODE BEGIN 1 */
+
+/* USER CODE END 1 */
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

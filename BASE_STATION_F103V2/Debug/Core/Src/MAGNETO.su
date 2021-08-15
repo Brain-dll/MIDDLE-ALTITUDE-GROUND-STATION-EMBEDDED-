@@ -1,0 +1,3 @@
+MAGNETO.c:38:6:magneto_Init	48	static
+MAGNETO.c:84:6:Read_mgn	24	static
+MAGNETO.c:93:7:Read_compass	24	static
