@@ -1,0 +1,13 @@
+QMC5883L.c:5:9:QMC5883L_Read_Reg	40	static
+QMC5883L.c:12:6:QMC5883L_Write_Reg	40	static
+QMC5883L.c:19:6:QMC5883L_Read_Data	32	static
+QMC5883L.c:27:9:QMC5883L_Read_Temperature	16	static
+QMC5883L.c:33:6:QMC5883L_Initialize	24	static
+QMC5883L.c:39:6:QMC5883L_Reset	8	static
+QMC5883L.c:44:6:QMC5883L_InterruptConfig	16	static
+QMC5883L.c:51:18:QMC5883L_DataIsReady	16	static
+QMC5883L.c:59:18:QMC5883L_DataIsSkipped	16	static
+QMC5883L.c:67:18:QMC5883L_DataIsOverflow	16	static
+QMC5883L.c:76:6:QMC5883L_ResetCalibration	4	static
+QMC5883L.c:82:7:QMC5883L_Heading	40	static
+QMC5883L.c:118:6:QMC5883L_Scale	24	static
